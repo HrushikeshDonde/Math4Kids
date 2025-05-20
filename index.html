@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math 4 kids</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <h1>MATH <span>4</span> KIDS</h1>
+        <ul>
+          <!-- <li onclick="operation('+')">ADD</li>
+          <li onclick="operation('-')">SUBTRACT</li>
+          <li onclick="operation('×')">MULTIPLY</li>
+          <li onclick="operation('÷')">DIVIDE</li> -->
+          <li onclick="operation('+')">+</li>
+          <li onclick="operation('-')">-</li>
+          <li onclick="operation('×')">×</li>
+          <li onclick="operation('÷')">÷</li>
+          <i class="fa-solid fa-bars menu"></i>
+        </ul>
+      </nav>
+      <div class="container">
+        <div class="equation-container">
+          <div id="equation">
+            <span id="number1">1</span>
+            <span id="operation">+</span>
+            <span id="number2">2</span>
+            <span>=</span>
+            <span>?</span>
+          </div>
+          <div id="img1" class="image">
+            <img id="happy" src="excited-spin.gif" alt="Correct Answer" />
+            <p>Correct Answer <span>😃</span></p>
+          </div>
+          <div id="img2" class="image">
+            <img id="sad" src="sad-peachcat.gif" alt="Wrong Answer" />
+            <p>Wrong Answer <span>😟</span></p>
+          </div>
+        </div>
+        <div class="options-container">
+          <div class="options" id="option-1" onclick="cheak(0)"></div>
+          <div class="options" id="option-2" onclick="cheak(1)"></div>
+          <div class="options" id="option-3" onclick="cheak(2)"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
